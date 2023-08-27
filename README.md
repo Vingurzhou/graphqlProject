@@ -3,9 +3,9 @@
 ## 目录
 ###  初始化
 ```shell
-go run github.com/99designs/gqlgen init
+gqlgen init
 ```
-```shell
+```
 ├── go.mod
 ├── go.sum
 ├── gqlgen.yml               - The gqlgen config file, knobs for controlling the generated code.
@@ -26,7 +26,7 @@ go mod tidy
 
 ## 生成代码
 ```shell
-go run github.com/99designs/gqlgen generate
+gqlgen generate
 ```
 
 ## 启动服务
