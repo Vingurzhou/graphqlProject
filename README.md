@@ -1,10 +1,15 @@
 # graphqlProject
+
 基于gqlgen的graphql服务
+
 ## 目录
-###  初始化
+
+### 初始化
+
 ```shell
 gqlgen init
 ```
+
 ```
 ├── go.mod
 ├── go.sum
@@ -19,17 +24,21 @@ gqlgen init
 │   └── schema.resolvers.go  - the resolver implementation for schema.graphql
 └── server.go                - The entry point to your app. Customize it however you see fit
 ```
+
 ## 安装开发工具
+
 ```shell
 go mod tidy
 ```
 
 ## 生成代码
+
 ```shell
-gqlgen generate
+go generate ./...
 ```
 
 ## 启动服务
+
 ```shell
 go run server.go
 ```
